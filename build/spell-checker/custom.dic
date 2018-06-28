@@ -15,6 +15,12 @@ UDF
 Vector3i
 XA
 µs
+args
+dst
+rrule
+LZ
+gps
+uid
 
 # ascii
 NUL
@@ -129,6 +135,7 @@ wtf
 # en
 authenticator
 callables
+cardinality
 cloneable
 combinatorics
 denormalization
@@ -136,11 +143,14 @@ denormalize
 denormalized
 endian
 ignorable
+inlined
+iterable
 login
 multithreaded
 nullable
 ok
 pokeable
+precomputed
 prepend
 quaternary
 reimplement
@@ -158,7 +168,13 @@ variadic
 versa
 
 # calendar
+evection
 julian
+kepler
+lunation
+lunations
+proleptic
+synodic
 
 monday
 tuesday
