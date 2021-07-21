@@ -72,7 +72,7 @@
             "@cs-tests"
         ],
 
-        "test": "sh vendor/bin/tester tests -c tests --colors 1",
+        "test": "php vendor/nette/tester/src/tester tests -c tests --colors 1",
         "test-all": [
             "php80 vendor/nette/tester/src/tester tests -c tests --colors 1",
             "php74 vendor/nette/tester/src/tester tests -c tests --colors 1",
