@@ -7,15 +7,11 @@
  * For the full copyright and license information read the file 'license.md', distributed with this source code
  */
 
-namespace Dogma\Io;
+namespace Dogma\System;
 
-use Dogma\Enum\StringEnum;
+use Dogma\Exception;
 
-class LineEndings extends StringEnum
+class CannotChangePriorityException extends Exception
 {
-
-    public const UNIX = "\n";
-    public const WINDOWS = "\r\n";
-    public const MAC = "\r";
 
 }

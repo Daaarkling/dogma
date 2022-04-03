@@ -43,7 +43,7 @@ use function func_get_args;
  */
 class Element
 {
-    use StrictBehaviorMixin;
+    //use StrictBehaviorMixin;
 
     /** @var QueryEngine */
     private $engine;

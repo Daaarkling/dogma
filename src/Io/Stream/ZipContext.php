@@ -7,20 +7,11 @@
  * For the full copyright and license information read the file 'license.md', distributed with this source code
  */
 
-namespace Dogma;
+namespace Dogma\Io\Stream;
 
-class Normalizer
+use StreamContext;
+
+class ZipContext extends StreamContext
 {
-    use StaticClassMixin;
-
-    public function normalize(string $value, bool $parseObjects = true)
-    {
-        // todo
-    }
-
-    public static function normalizeAll(array $values, int $parseObjects): array
-    {
-        // todo
-    }
 
 }

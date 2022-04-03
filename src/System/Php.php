@@ -14,10 +14,13 @@ use Dogma\StaticClassMixin;
 use const INFO_GENERAL;
 use const PHP_INT_SIZE;
 use const PHP_SAPI;
+use function error_clear_last;
+use function error_get_last;
 use function extension_loaded;
 use function ob_get_clean;
 use function ob_start;
 use function phpinfo;
+use function proc_nice;
 
 class Php
 {
@@ -59,6 +62,15 @@ class Php
         }
 
         return $threadSafe;
+    }
+
+    public static function setPriority(int $priority): void
+    {
+        error_clear_last();
+        $result = @proc_nice($priority);
+        if ($result !== true) {
+            throw new CannotChangePriorityException('Cannot change system priority: ' . error_get_last()['message']);
+        }
     }
 
 }

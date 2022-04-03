@@ -7,11 +7,11 @@
  * For the full copyright and license information read the file 'license.md', distributed with this source code
  */
 
-namespace Dogma\Io\Filesystem;
+namespace Dogma\Io\Stream;
 
-use Dogma\Io\IoException;
+use StreamContext;
 
-class DirectoryException extends IoException
+class SocketContext extends StreamContext
 {
 
 }

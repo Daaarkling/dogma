@@ -28,6 +28,16 @@ class IntCalc
 
     // rounding & mapping ----------------------------------------------------------------------------------------------
 
+    public static function floor(float $number): int
+    {
+        return (int) floor($number);
+    }
+
+    public static function ceil(float $number): int
+    {
+        return (int) ceil($number);
+    }
+
     public static function roundTo(int $n, int $multiple): int
     {
         $up = self::roundUpTo($n, $multiple);
